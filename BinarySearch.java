@@ -4,7 +4,8 @@ public class BinarySearch
         int[] a={1,2,3,4,5,6};
         int target=6;
         int result=BinarySearch1(a,target);
-        if(result!=-1)
+        int result1=BinarySearch2(a, target, 0, a.length);
+        if(result1!=-1)
         {
             System.out.println("Element found "+result);
         }
@@ -32,6 +33,26 @@ public class BinarySearch
             else
             {
                 right=mid-1;
+            }
+        }
+        return -1;
+    }
+    public static int BinarySearch2(int[] arr,int target, int left, int right)
+    {
+        while(left<right)
+        {
+            int mid=(left+right)/2;
+            if(arr[mid]==target)
+            {
+                return mid;
+            }
+            else if(arr[mid]<target)
+            {
+                return BinarySearch2(arr, target, mid+1,right);
+            }
+            else
+            {
+                return BinarySearch2(arr, target, left, mid-1);
             }
         }
         return -1;
