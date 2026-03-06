@@ -24,6 +24,6 @@ public class Leetcode1365
             }
             result[i]=count;
         }
-        System.err.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(result));
     }
 }
