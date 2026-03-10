@@ -1,9 +1,9 @@
 class Automorphic
 {
     public static void main(String[] args) {
-        int n=7;
+        int n=76;
         int res=n*n;
-        int digit=res%10;
+        int digit=res%100;
         if(digit==n)
         {
             System.out.println("Automphoric Number "+digit);
