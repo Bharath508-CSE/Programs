@@ -27,6 +27,6 @@ public class Floor
                 start=mid+1;
             }
          }
-         return end;
+         return end; // in Binary Search in this we will return -1 but in floor we will return end
     }
 }
