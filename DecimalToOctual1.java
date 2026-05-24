@@ -1,4 +1,4 @@
-class OctualToDecimal{
+class DecimalToOctual1{
     public static void main(String[] args) {
         int n=25;
         String rem="";
